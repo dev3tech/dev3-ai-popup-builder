@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEV3 AI Popup &amp; Lead Capture Builder for WordPress – Documentation</title>
+<style>
+:root{--b:#4f46e5;--t:#1f2328;--m:#4b5563;--l:#e5e7eb;--s:#f8fafc}
+*{box-sizing:border-box}body{margin:0;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--t);background:#fff}
+header{background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;padding:48px 20px}header div{max-width:960px;margin:auto}header h1{margin:0 0 8px;font-size:clamp(26px,4vw,40px)}header p{margin:0;opacity:.92}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--l);z-index:2}nav div{max-width:960px;margin:auto;padding:10px 20px;display:flex;gap:6px 16px;flex-wrap:wrap;font-size:14px}nav a{color:var(--b);text-decoration:none}
+main{max-width:960px;margin:auto;padding:24px 20px 64px}h2{margin-top:48px;padding-top:12px;border-top:1px solid var(--l)}h3{margin-top:28px}
+code,pre{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px}pre{background:#0f172a;color:#e2e8f0;padding:16px;border-radius:8px;overflow:auto}code{background:var(--s);padding:1px 5px;border-radius:4px}pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}th,td{border:1px solid var(--l);padding:8px 10px;text-align:left;vertical-align:top}th{background:var(--s)}
+.note{background:#eef2ff;border-left:4px solid var(--b);padding:12px 16px;border-radius:6px}img{max-width:100%;border:1px solid var(--l);border-radius:8px}.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+</style>
+</head>
+<body>
+<header><div><h1>DEV3 AI Popup &amp; Lead Capture Builder for WordPress</h1><p>Version 1.0.0 · by DEV3 Technologies · Requires WordPress 6.0+, PHP 7.4+ · WooCommerce 8+ optional</p></div></header>
+<nav><div><a href="#install">Install</a><a href="#gemini">Gemini key</a><a href="#campaigns">Campaigns</a><a href="#editor">Editor</a><a href="#triggers">Triggers</a><a href="#targeting">Targeting</a><a href="#ab">A/B tests</a><a href="#leads">Leads</a><a href="#integrations">Integrations</a><a href="#ai">DEV3 AI</a><a href="#embed">Embed</a><a href="#mobile">Mobile &amp; a11y</a><a href="#performance">Performance</a><a href="#settings">Settings</a><a href="#hooks">Hooks &amp; REST</a><a href="#privacy">Privacy</a><a href="#faq">FAQ</a><a href="#changelog">Changelog</a></div></nav>
+<main>
+<div class="shots"><img src="screenshots/1-visual-editor.png" alt="Visual editor"><img src="screenshots/5-popup-desktop.png" alt="Popup on the front end"><img src="screenshots/6-mobile-safe-sheet.png" alt="Mobile-safe sheet"></div>
+
+<h2 id="install">1. Installation</h2>
+<ol><li>In WordPress go to <b>Plugins → Add New → Upload Plugin</b>, choose <code>dev3-ai-popup-builder.zip</code> and activate it.</li>
+<li>A new menu <b>DEV3 AI Popups</b> appears. Open <b>Campaigns → New campaign</b>.</li>
+<li>Pick one of the 12 templates (or <b>Describe with DEV3 AI</b>). It is created as a <b>draft</b>.</li>
+<li>Adjust content, design, triggers and targeting, click <b>Preview on site</b> to see it live (only you see drafts), then <b>Publish</b>.</li></ol>
+<p>No licence key or activation is needed. Updates are delivered as new zips through CodeCanyon.</p>
+
+<h2 id="gemini">2. Google Gemini API key (optional)</h2>
+<ol><li>Open <a href="https://aistudio.google.com/app/apikey">Google AI Studio → API keys</a> and create a key.</li>
+<li>In <b>DEV3 AI Popups → API Config</b> paste the key and save. It is encrypted (AES-256-GCM) and never sent to browsers. Alternatively define <code>define( 'DEV3PU_GEMINI_API_KEY', '…' );</code> in <code>wp-config.php</code>.</li>
+<li>Optional: set a monthly AI budget (USD). AI pauses when it is reached; campaigns keep working.</li></ol>
+<p>Default models: <code>gemini-2.5-flash</code> (copy, variants, targeting, explanations) and a heavier thinking budget for whole-campaign drafts. Visitors never trigger AI calls.</p>
+
+<h2 id="campaigns">3. Campaigns and formats</h2>
+<table><tr><th>Format</th><th>What it is</th><th>Accessibility</th></tr>
+<tr><td>Popup</td><td>Centered modal, sizes S/M/L, layouts stacked / image left / image on top / minimal, adjustable backdrop.</td><td>Dialog with <code>aria-modal</code>, focus trap, Escape, focus restored, scroll lock without layout shift.</td></tr>
+<tr><td>Slide-in</td><td>Card in the bottom-right or bottom-left corner.</td><td>Non-modal dialog: never steals focus; Escape closes it when focused.</td></tr>
+<tr><td>Floating bar</td><td>Top or bottom bar that overlays the page (never pushes content). Ideal for announcements or a one-field signup.</td><td>Labelled region.</td></tr>
+<tr><td>Full screen</td><td>Welcome mat covering the viewport (a bottom sheet on phones in mobile-safe mode).</td><td>As popup.</td></tr>
+<tr><td>Inline form</td><td>Rendered in the page by the <b>Lead form</b> block, <code>[dev3pu_form id="…"]</code> or automatically before/after posts.</td><td>Normal form with labels, errors linked by <code>aria-describedby</code>.</td></tr></table>
+<p>Statuses: <b>Draft</b> (only previews), <b>Active</b>, <b>Paused</b>, <b>Archived</b>. Campaigns can be duplicated, scheduled (start/end) and prioritised (higher priority wins when several could open).</p>
+
+<h2 id="editor">4. The visual editor</h2>
+<ul><li><b>Content</b>: eyebrow, headline, body (links and bold allowed), button, “No thanks” link, image from the media library with alt text, success title and message. With several variants, you edit the variant selected above the preview.</li>
+<li><b>Form &amp; offer</b>: form (up to 6 fields: email, text, phone, dropdown, checkbox), button link (CTA) or announcement only; GDPR consent checkbox (its exact text is stored with each lead); offer after signup: none, a fixed code, or a <b>unique one-time WooCommerce coupon</b> (percent or fixed, expiry, prefix, restricted to the lead's email); show a message or redirect.</li>
+<li><b>Design</b>: format, layout, size, alignment, position, colours (with a live WCAG contrast check), corner radius, backdrop darkness and animation (disabled automatically for reduced-motion users). Fonts come from your theme.</li>
+<li><b>Preview</b>: Desktop / Phone frames, variant switcher, Form / Success state. It uses the same renderer and CSS as the front end.</li></ul>
+
+<h2 id="triggers">5. Triggers</h2>
+<table><tr><th>Trigger</th><th>Setting</th><th>Notes</th></tr>
+<tr><td>On page load</td><td>-</td><td>On phones in mobile-safe mode this becomes “after 10 s or 40% scroll”.</td></tr>
+<tr><td>After time on page</td><td>seconds</td><td></td></tr>
+<tr><td>After scrolling</td><td>percent</td><td></td></tr>
+<tr><td>Exit intent</td><td>sensitivity (px)</td><td>Desktop: the pointer leaves through the top. Phones: a fast scroll back up after 30% depth (or off).</td></tr>
+<tr><td>After inactivity</td><td>seconds</td><td>No mouse, keyboard, scroll or touch.</td></tr>
+<tr><td>On click</td><td>optional CSS selector</td><td>Always available: links to <code>#dev3pu-open-ID</code>, elements with class <code>dev3pu-open-ID</code>, the <b>Popup button</b> block and <code>[dev3pu_button id="ID" label="…"]</code>. Click-opened campaigns ignore frequency caps and replace an automatic bar/slide-in.</td></tr></table>
+
+<h2 id="targeting">6. Targeting and frequency</h2>
+<ul><li><b>Pages</b> (server-side, works with page caches): every page, only matches, or all except matches. Rules: front page, post type, IDs, category/tag/term, URL contains or wildcard (<code>/blog/*</code>), search results, 404, WooCommerce shop/product/cart/checkout/account.</li>
+<li><b>Visitors</b> (in the browser): devices (desktop &gt;1024px, tablet, phone ≤600px), logged in/out, new vs returning, minimum pages viewed in this visit, referrer (search engines, social networks, direct, contains / does not contain), UTM rules (equals/contains; first-touch UTMs are remembered for the visit).</li>
+<li><b>WooCommerce cart</b>: minimum/maximum cart value and “not empty”, read from a small <code>dev3pu_cart</code> cookie that is refreshed whenever totals are calculated (classic cart and Cart/Checkout blocks).</li>
+<li><b>Frequency</b>: once per visit, at most every N days, at most N times, or every page view; hide for N days after closing; never again (or after N days) after signing up.</li>
+<li><b>Global guards</b> (Settings): max overlays per page view (default 1), seconds between overlays, hidden roles, Do Not Track / Global Privacy Control.</li></ul>
+
+<h2 id="ab">7. A/B tests</h2>
+<p>Add up to 4 variants (copies of the control, or DEV3 AI offer variants) and set traffic weights. Each visitor always sees the same variant. Views, conversions (form sign-ups or CTA clicks) and closes are counted per variant per day. <b>Results</b> shows conversion rate, uplift vs control and confidence (two-proportion z-test); a variant is marked significant at ≥95% with ≥100 views per variant. <b>Declare winner</b> stops the test and serves only that variant; history is kept. Inline A/B variants are chosen before the first paint, so there is no layout shift.</p>
+
+<h2 id="leads">8. Leads</h2>
+<p><b>Leads</b> lists every signup with campaign, variant, consent text, page, referrer, UTM, device, coupon and integration status. Search, filter by campaign/status/date, open details, retry sync, delete, and <b>Export CSV</b> (UTF-8, Excel-safe, guarded against formula injection). A second signup with the same email for the same campaign updates the lead instead of duplicating it. Spam protection: hidden honeypot, minimum fill time, per-IP rate limits and server-side validation.</p>
+
+<h2 id="integrations">9. Integrations</h2>
+<ul><li><b>Mailchimp</b>: API key (ends in <code>-usXX</code>), audience picker, tags, optional double opt-in. First/last name and phone are mapped to FNAME/LNAME/PHONE.</li>
+<li><b>Brevo</b>: v3 API key and list picker; FIRSTNAME/LASTNAME/SMS attributes.</li>
+<li><b>Webhook</b>: JSON POST per lead (<code>event: lead.captured</code>, lead, campaign, site) to any public HTTPS URL; internal/private hosts are refused. With a signing secret every request carries <code>X-DEV3PU-Signature: sha256=HMAC(body)</code>.</li></ul>
+<p>Keys are stored encrypted and never shown again (only the last 4 characters). If the campaign has a consent checkbox, Mailchimp and Brevo only receive leads who ticked it. Failures never block the visitor's success message; the lead shows “Sync failed” with the error and a <b>Retry sync</b> button.</p>
+
+<h2 id="ai">10. DEV3 AI features</h2>
+<table><tr><th>Feature</th><th>Where</th><th>What you get</th></tr>
+<tr><td>Write with DEV3 AI</td><td>Editor → Content</td><td>New copy for the selected variant (eyebrow, headline, body, button, decline, success texts) shown as a diff. Accept, edit, regenerate or reject.</td></tr>
+<tr><td>Offer variants</td><td>Editor → A/B test</td><td>Three different angles or offers with rationale; “Add to test” creates a variant.</td></tr>
+<tr><td>Suggest targeting</td><td>Editor → Targeting</td><td>Triggers, devices, page rules, referrer, visitor type and frequency with reasons, shown as a JSON diff; mobile-friendly by default.</td></tr>
+<tr><td>Explain results</td><td>Editor → Results</td><td>Plain-language summary, a winner only when the data is conclusive, and an idea for the next test.</td></tr>
+<tr><td>Describe a campaign</td><td>New campaign</td><td>A complete draft campaign from one sentence. Created only when you click “Create draft and edit”.</td></tr></table>
+<p>Nothing is saved, published or activated by AI. Copy follows the <b>Brand voice</b> setting and your admin language. Usage and cost are visible under <b>Usage Logs</b>.</p>
+
+<h2 id="embed">11. Blocks and shortcodes</h2>
+<pre><code>[dev3pu_form id="12"]                       inline campaign
+[dev3pu_button id="7" label="Get the guide"]  opens an overlay campaign
+&lt;a href="#dev3pu-open-7"&gt;Open&lt;/a&gt;             any link
+&lt;span class="dev3pu-open-7"&gt;…&lt;/span&gt;          any element</code></pre>
+<p>Blocks: <b>Lead form</b> and <b>Popup button</b> (Widgets category). JavaScript API: <code>window.dev3puRuntime.open( 7 )</code> and <code>.close()</code>.</p>
+
+<h2 id="mobile">12. Mobile and accessibility</h2>
+<p><b>Mobile-safe mode</b> (on by default) shows popups and full-screen campaigns on phones as a bottom sheet that covers at most 60% of the screen, has no blocking backdrop and does not lock scrolling, unless the visitor opened it with a click. Touch targets are at least 44px, inputs use 16px text (no iOS zoom) and the sheet respects the safe area. Overlays use semantic dialogs/regions with labels, visible focus, Escape to close and focus return; animation uses only opacity/transform and is turned off for <code>prefers-reduced-motion</code>.</p>
+
+<h2 id="performance">13. Performance</h2>
+<ul><li>Nothing is loaded on pages where no campaign can show.</li>
+<li>One deferred, dependency-free script (~19 KB, ~7 KB gzipped) started on browser idle; campaign DOM and images are created only when a trigger fires.</li>
+<li>Overlays are fixed-position and never move page content (no CLS). On overlay-only pages the stylesheet loads without blocking render.</li>
+<li>Inline forms are rendered on the server with image dimensions reserved.</li></ul>
+
+<h2 id="settings">14. Settings</h2>
+<p>Mobile-safe mode, max overlays per page view, seconds between overlays, hidden roles, Do Not Track/GPC, tracking on/off, hashed IP storage, lead retention (days), minimum seconds before a form can be sent, brand voice and delete-on-uninstall.</p>
+
+<h2 id="hooks">15. Hooks and REST</h2>
+<table><tr><th>Hook</th><th>Use</th></tr>
+<tr><td><code>do_action( 'dev3pu_lead_captured', $lead, $campaign, $created )</code></td><td>Send leads to a CRM of your own.</td></tr>
+<tr><td><code>do_action( 'dev3pu_campaign_created', $id )</code></td><td>After a campaign is created.</td></tr>
+<tr><td><code>apply_filters( 'dev3pu_page_campaigns', $campaigns, $ctx )</code></td><td>Add/remove overlay campaigns for the current page.</td></tr>
+<tr><td><code>apply_filters( 'dev3pu_templates', $templates )</code></td><td>Add your own templates.</td></tr>
+<tr><td><code>apply_filters( 'dev3pu_public_rate_limit', $limit, $bucket )</code></td><td>Per-IP limits for <code>dev3pu_track</code> (120/min) and <code>dev3pu_submit</code> (10/min).</td></tr>
+<tr><td><code>dev3pu_manage_capability</code>, <code>dev3pu_capability</code></td><td>Who can manage campaigns / use AI.</td></tr>
+<tr><td><code>dev3pu_prompt_dev3pu_copy</code> (and <code>_variants</code>, <code>_targeting</code>, <code>_explain</code>, <code>_campaign</code>)</td><td>Adjust the AI prompts.</td></tr></table>
+<p>REST namespace <code>dev3pu/v1</code>: <code>campaigns</code>, <code>campaigns/&lt;id&gt;</code> (+ <code>/duplicate</code>, <code>/status</code>, <code>/results</code>, <code>/winner</code>), <code>templates</code>, <code>dashboard</code>, <code>leads</code>, <code>integrations</code>, <code>ai/*</code> (admin, REST nonce required) and <code>public/track</code>, <code>public/submit</code> (same-origin, rate limited).</p>
+
+<h2 id="privacy">16. Privacy</h2>
+<p>Leads are stored in your database only. They are included in WordPress personal data exports and erasure requests. Tracking counters are anonymous daily totals; the browser keeps small localStorage/sessionStorage entries for frequency caps and A/B assignment. IP addresses are not stored unless you enable hashed IPs. When AI is used, the campaign texts you send are processed by Google Gemini under your own API key; no visitor data is sent to AI.</p>
+
+<h2 id="faq">17. FAQ</h2>
+<h3>A popup does not appear.</h3><p>Check the status is Active, the page rules match, your role is not hidden in Settings, and frequency caps (they are stored in your browser: use a private window or <b>Preview on site</b>). Only one overlay shows per page view by default.</p>
+<h3>Does it work with caching plugins?</h3><p>Yes. Exclude nothing; the public endpoints need no nonce.</p>
+<h3>Can I use my own form plugin?</h3><p>Use a CTA campaign that links to your form page, or the inline/popup forms built in.</p>
+<h3>Why do I see a bottom sheet on my phone?</h3><p>Mobile-safe mode. Turn it off in Settings if you really need full popups on phones.</p>
+
+<h2 id="changelog">18. Changelog</h2>
+<p><b>1.0.0</b> · Initial release.</p>
+</main>
+</body>
+</html>

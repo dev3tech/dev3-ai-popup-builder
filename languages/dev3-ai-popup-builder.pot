@@ -1,0 +1,2998 @@
+# Copyright (C) 2026 DEV3 Technologies
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: DEV3 AI Popup & Lead Capture Builder for WordPress 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dev3-ai-popup-builder\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-25T03:54:30+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: dev3-ai-popup-builder\n"
+
+#. Plugin Name of the plugin
+#: dev3-ai-popup-builder.php
+msgid "DEV3 AI Popup & Lead Capture Builder for WordPress"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: dev3-ai-popup-builder.php
+msgid "https://dev3.tech/item/dev3-ai-popup-builder"
+msgstr ""
+
+#. Description of the plugin
+#: dev3-ai-popup-builder.php
+msgid "Popups, slide-ins, floating bars and inline forms with smart triggers, targeting, A/B tests, lead storage and DEV3 AI copywriting."
+msgstr ""
+
+#. Author of the plugin
+#: dev3-ai-popup-builder.php
+msgid "DEV3 Technologies"
+msgstr ""
+
+#. Author URI of the plugin
+#: dev3-ai-popup-builder.php
+msgid "https://dev3.tech"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:43
+#: includes/Core3/Rest/Base_Controller.php:75
+#: includes/Core3/Rest/Core_Controller.php:115
+msgid "You do not have permission to do that."
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:67
+msgid "DEV3 AI Popups"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:97
+#: build/admin.js:7
+msgid "Settings"
+msgstr ""
+
+#: includes/Ai/Assistant.php:315
+msgid "Describe the campaign you want."
+msgstr ""
+
+#: includes/Ai/Assistant.php:362
+msgid "First name"
+msgstr ""
+
+#: includes/Ai/Assistant.php:391
+msgid "AI campaign"
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:212
+msgid "Unsupported image type."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:216
+msgid "The image data is invalid."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "AI features are turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "Turn AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Storefront AI is turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Turn storefront AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:49
+msgid "No Gemini API key is configured."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:50
+msgid "Open the plugin settings → API Config and paste a key from Google AI Studio."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:63
+msgid "AI paused: the monthly AI budget is reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:64
+msgid "Raise the monthly cap in API Config, or wait until the budget resets on the 1st of next month."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:80
+msgid "The AI service took too long to respond."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:81
+msgid "Try again, shorten the prompt, lower Max Output Tokens, or switch to the faster model."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:89
+msgid "Your server could not reach the AI service (Google Gemini API)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:90
+msgid "Check the server's internet connection or firewall (outbound HTTPS to generativelanguage.googleapis.com)."
+msgstr ""
+
+#. translators: %s: transport error message.
+#: includes/Core3/Api/Api_Error.php:98
+#, php-format
+msgid "Request to the AI service failed: %s"
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:99
+#: includes/Core3/Api/Gemini_Client.php:250
+#: includes/Core3/Api/Gemini_Client.php:422
+msgid "Try again in a moment."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:128
+msgid "The Gemini API key is not valid."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:129
+msgid "Create a new key in Google AI Studio and paste it in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "Your Gemini quota is exhausted."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "AI rate limit reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:139
+msgid "Wait for the quota to reset, enable billing on your Google Cloud project, or switch to a model with remaining quota."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:140
+msgid "Wait a few seconds and try again."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:148
+msgid "This API key is not allowed to use Gemini."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:149
+msgid "Enable the Generative Language API for the key's project, and check any key restrictions (HTTP referrer / IP)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:156
+msgid "The selected Gemini model is not available."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:157
+msgid "Pick another model in API Config — click \"Refresh models\" to load the ones your key can use."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:164
+msgid "The AI service is not available in your server's region."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:165
+msgid "Host the site in a supported region or use a key from a supported project."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:172
+msgid "The AI service is temporarily unavailable."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:173
+msgid "This is on Google's side. Try again shortly or switch models."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:180
+msgid "The AI service rejected the request."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:181
+msgid "Adjust the prompt or settings and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:250
+msgid "The AI returned an incomplete embedding batch."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI blocked this image request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI did not return an image."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+#: includes/Core3/Api/Gemini_Client.php:472
+#: includes/Core3/Api/Gemini_Client.php:508
+msgid "Rephrase the prompt and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+msgid "Try again, or describe the image more concretely."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:421
+msgid "The AI returned malformed data."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:471
+msgid "The AI blocked this request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:507
+msgid "The AI stopped because the response was flagged."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:515
+msgid "The AI ran out of output tokens before writing an answer."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:516
+msgid "Increase Max Output Tokens in API Config, or set Reasoning to \"Low\"."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:523
+msgid "The AI returned an empty response."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:524
+msgid "Try again or rephrase the prompt."
+msgstr ""
+
+#: includes/Core3/Api/Prompts.php:124
+msgid "Unknown prompt template."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:90
+msgid "Unknown job type."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:116
+msgid "The job could not be saved."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:238
+#: build/admin.js:1
+msgid "Failed"
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:339
+#: includes/Core3/Rest/Core_Controller.php:112
+msgid "Job not found."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:33
+#: includes/Core3/Core/Privacy.php:34
+#: includes/Core3/Core/Privacy.php:165
+msgid "AI usage log"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/Core3/Core/Privacy.php:85
+#, php-format
+msgid "This site uses %s, which sends the content needed for AI features (for example product details, reviews or form text) to Google Gemini, operated by Google LLC, as a data processor. Only the fields needed for the requested feature are sent. Google's terms and privacy policy apply: https://ai.google.dev/gemini-api/terms"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:87
+msgid "The plugin keeps a usage log (time, feature, token counts and the user account that triggered the request) to show AI usage and costs to administrators. It does not store the prompts."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:169
+msgid "Feature"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:173
+#: build/admin.js:1
+msgid "Model"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:177
+#: build/admin.js:1
+msgid "Tokens"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:181
+#: includes/Data/Leads.php:386
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Date"
+msgstr ""
+
+#: includes/Core3/Data/Usage_Repository.php:194
+msgid "Deleted user"
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:72
+msgid "Your session has expired. Reload the editor and try again."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:94
+msgid "Cross-origin requests are not allowed."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:104
+msgid "Too many requests. Please wait a moment."
+msgstr ""
+
+#: includes/Data/Campaigns.php:132
+msgid "Could not save the campaign."
+msgstr ""
+
+#: includes/Data/Campaigns.php:156
+#: includes/Data/Campaigns.php:186
+#: includes/Rest/Ai_Controller.php:88
+#: includes/Rest/Campaigns_Controller.php:189
+msgid "Campaign not found."
+msgstr ""
+
+#. translators: %s: campaign title
+#: includes/Data/Campaigns.php:188
+#, php-format
+msgid "%s (copy)"
+msgstr ""
+
+#: includes/Data/Leads.php:366
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Email"
+msgstr ""
+
+#: includes/Data/Leads.php:370
+#: build/admin.js:7
+msgid "Name"
+msgstr ""
+
+#: includes/Data/Leads.php:374
+#: build/admin.js:7
+msgid "Phone"
+msgstr ""
+
+#: includes/Data/Leads.php:378
+#: build/admin.js:7
+msgid "Consent"
+msgstr ""
+
+#: includes/Data/Leads.php:379
+msgid "No"
+msgstr ""
+
+#: includes/Data/Leads.php:382
+#: build/admin.js:7
+msgid "Page"
+msgstr ""
+
+#: includes/Data/Leads.php:398
+msgid "Popup leads"
+msgstr ""
+
+#: includes/Frontend/Frontend.php:307
+#: build/admin.js:1
+msgid "Close"
+msgstr ""
+
+#: includes/Frontend/Frontend.php:308
+msgid "Sending…"
+msgstr ""
+
+#: includes/Frontend/Frontend.php:309
+#: includes/Leads/Capture.php:169
+msgid "This field is required."
+msgstr ""
+
+#: includes/Frontend/Frontend.php:310
+#: includes/Leads/Capture.php:175
+msgid "Enter a valid email address."
+msgstr ""
+
+#: includes/Frontend/Frontend.php:311
+#: includes/Leads/Capture.php:214
+msgid "Please tick the box to continue."
+msgstr ""
+
+#: includes/Frontend/Frontend.php:312
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: includes/Frontend/Frontend.php:313
+#: includes/Frontend/Renderer.php:210
+#: build/admin.js:1
+msgid "Copy code"
+msgstr ""
+
+#: includes/Frontend/Frontend.php:314
+msgid "Copied!"
+msgstr ""
+
+#: includes/Frontend/Frontend.php:315
+#: includes/Frontend/Renderer.php:164
+#: build/admin.js:1
+msgid "Submit"
+msgstr ""
+
+#: includes/Frontend/Frontend.php:316
+#: includes/Frontend/Renderer.php:188
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Choose…"
+msgstr ""
+
+#: includes/Frontend/Frontend.php:444
+#: build/block.js:1
+msgid "Open"
+msgstr ""
+
+#: includes/Integrations/Services.php:175
+msgid "Add a Mailchimp API key (it ends in -usXX) under Integrations."
+msgstr ""
+
+#: includes/Integrations/Services.php:200
+msgid "Mailchimp: choose an audience for this campaign."
+msgstr ""
+
+#: includes/Integrations/Services.php:251
+msgid "Add a Brevo API key under Integrations."
+msgstr ""
+
+#: includes/Integrations/Services.php:277
+msgid "Brevo: the lead has no email address."
+msgstr ""
+
+#: includes/Integrations/Services.php:307
+msgid "Add a valid public webhook URL."
+msgstr ""
+
+#: includes/Integrations/Services.php:351
+msgid "Test event delivered."
+msgstr ""
+
+#. translators: %d: number of lists
+#: includes/Integrations/Services.php:362
+#, php-format
+msgid "Connected. %d list found."
+msgid_plural "Connected. %d lists found."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Integrations/Services.php:379
+msgid "Unknown integration."
+msgstr ""
+
+#: includes/Leads/Capture.php:35
+msgid "This form is no longer available."
+msgstr ""
+
+#: includes/Leads/Capture.php:46
+msgid "That was quick! Please try again."
+msgstr ""
+
+#: includes/Leads/Capture.php:169
+#: includes/Leads/Capture.php:229
+#: includes/Leads/Capture.php:232
+msgid "Enter your email address."
+msgstr ""
+
+#: includes/Leads/Capture.php:186
+msgid "Enter a valid phone number."
+msgstr ""
+
+#: includes/Leads/Capture.php:196
+msgid "Choose one of the options."
+msgstr ""
+
+#: includes/Leads/Capture.php:219
+msgid "Please check the highlighted fields."
+msgstr ""
+
+#: includes/Leads/Coupons.php:36
+msgid "WooCommerce is not active."
+msgstr ""
+
+#: includes/Leads/Coupons.php:48
+#: includes/Leads/Coupons.php:64
+msgid "Could not create a coupon code."
+msgstr ""
+
+#. translators: %d: campaign id
+#: includes/Leads/Coupons.php:61
+#, php-format
+msgid "Lead capture coupon (campaign #%d)"
+msgstr ""
+
+#: includes/Rest/Campaigns_Controller.php:172
+msgid "Unknown template."
+msgstr ""
+
+#: includes/Rest/Campaigns_Controller.php:258
+msgid "Unknown status."
+msgstr ""
+
+#: includes/Rest/Campaigns_Controller.php:287
+msgid "Unknown variant."
+msgstr ""
+
+#: includes/Rest/Leads_Controller.php:125
+msgid "Lead not found."
+msgstr ""
+
+#: includes/Rest/Leads_Controller.php:162
+msgid "Lead or campaign not found."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:102
+msgid "Unknown campaign."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Request cancelled."
+msgstr ""
+
+#: build/admin.js:1
+msgid "You appear to be offline."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your internet connection, then try again."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Could not reach your WordPress site."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your connection or reload the editor."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Your session has expired."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save your work and reload the page."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Something went wrong."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Loading"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generating…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generate with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused: monthly budget reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Adjust the cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Try again"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use a hex colour like #4f46e5."
+msgstr ""
+
+#: build/admin.js:1
+msgid "picker"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Estimated AI spend this month"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI off"
+msgstr ""
+
+#. translators: %s: cap
+#: build/admin.js:1
+#, js-format
+msgid "of %s cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI turned off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused · cap reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Near cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget used"
+msgstr ""
+
+#. translators: 1: requests, 2: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s requests · %2$s tokens"
+msgstr ""
+
+#. translators: %s: date
+#: build/admin.js:1
+#, js-format
+msgid "resets %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Set a monthly cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Queued"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Running"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cancelled"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss notification"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose from list"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Custom model ID…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Google Gemini API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a free key in Google AI Studio, paste it here and click “Validate & save”. The key is encrypted in your database and never sent to the browser."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Get an API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The key is defined by the DEV3PU_GEMINI_API_KEY constant in wp-config.php."
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "API key"
+msgstr ""
+
+#. translators: %d: number of models
+#: build/admin.js:1
+#, js-format
+msgid "Connected — %d models available to this key."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Validate & save"
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key removed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "OpenSSL is not available on this server, so the key is only obfuscated. Consider defining DEV3PU_GEMINI_API_KEY in wp-config.php instead."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Models & generation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast is used for most tasks; Pro for complex, long-form or structured work."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refresh models"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Engine settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save engine settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-flash"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pro model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-pro"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Image model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for image generation. Default: gemini-2.5-flash-image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Embedding model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for semantic search. Default: gemini-embedding-001"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Temperature"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Lower = focused and consistent, higher = more creative (0–1)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Max output tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Upper limit per answer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reasoning"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“Low” keeps generations fast and cheap; “Auto” lets the model think longer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Low (fast)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Auto (model decides)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Costs are estimated from token counts and Google’s list prices. Check exact billing in Google AI Studio."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget and safety settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI pauses when the estimated spend this month reaches the cap. 0 = no cap."
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI features"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn off to stop every AI call. The plugin keeps working without AI."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Storefront AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Kill switch for visitor-facing AI. Visitors get the non-AI fallback."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cache AI results"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reuse answers for identical requests to save tokens."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mask personal data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replace emails, phone and card numbers before text is sent to Google Gemini."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pagination"
+msgstr ""
+
+#. translators: 1: first row, 2: last row, 3: total rows
+#: build/admin.js:1
+#, js-format
+msgid "%1$s–%2$s of %3$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Previous page"
+msgstr ""
+
+#. translators: 1: page, 2: pages
+#: build/admin.js:1
+#, js-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Next page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Actions"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nothing here yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sort by"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Default"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Est. cost"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Token counts come from the AI provider’s usage metadata; costs are estimates. Check exact billing in Google AI Studio / Cloud Console."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Period"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 7 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 30 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 90 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Total tokens"
+msgstr ""
+
+#. translators: 1: input, 2: output
+#: build/admin.js:1
+#, js-format
+msgid "%1$s in · %2$s out"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Avg. response"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Errors"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day chart"
+msgstr ""
+
+#. translators: 1: date, 2: requests, 3: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s — %2$s requests, %3$s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests in this period yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Usage appears here as soon as an AI feature runs."
+msgstr ""
+
+#: build/admin.js:1
+msgid "By task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By user"
+msgstr ""
+
+#: build/admin.js:1
+msgid "User"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recent requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests logged yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Where"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time (s)"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Status"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Plugin sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Section"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accept"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Changes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Side by side"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not saved yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft view"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit JSON"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Current"
+msgstr ""
+
+#. translators: %s: token count
+#: build/admin.js:1
+#, js-format
+msgid "%s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cached"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Reject"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Regenerate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done editing"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The JSON is not valid. Fix it or regenerate."
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Views"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Popup"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Slide-in"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Floating bar"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Full screen"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Inline form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Active"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Paused"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Archived"
+msgstr ""
+
+#: build/admin.js:1
+msgid "On page load"
+msgstr ""
+
+#: build/admin.js:1
+msgid "After time on page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "After scrolling"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Exit intent"
+msgstr ""
+
+#: build/admin.js:1
+msgid "On click"
+msgstr ""
+
+#: build/admin.js:1
+msgid "After inactivity"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Front page"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Post type"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Specific posts/pages (IDs)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Category / tag"
+msgstr ""
+
+#: build/admin.js:1
+msgid "URL contains / matches"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search results"
+msgstr ""
+
+#: build/admin.js:1
+msgid "404 page"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "WooCommerce page"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Dashboard"
+msgstr ""
+
+#: build/admin.js:1
+msgid "How your popups, bars and forms performed in the last 30 days."
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "New campaign"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+#: build/block.js:1
+msgid "Campaign"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Type"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Leads"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Conversion"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add your API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI writes popup copy, offer variants for A/B tests and targeting suggestions. Everything else works without it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "vs previous 30 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Conversion rate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "leads ÷ views"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Active campaigns"
+msgstr ""
+
+#: build/admin.js:1
+msgid "live on the site"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Leads per day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Form sign-ups and button clicks, last 30 days."
+msgstr ""
+
+#: build/admin.js:1
+msgid "No activity yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Publish a campaign and views and leads will show up here."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Top campaigns"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No campaigns yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Start from a template in under a minute."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a campaign"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recent leads"
+msgstr ""
+
+#: build/admin.js:1
+msgid "All leads"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No leads yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "10% off for first-time visitors who are about to leave the shop"
+msgstr ""
+
+#: build/admin.js:1
+msgid "A slide-in on blog posts offering our free SEO checklist"
+msgstr ""
+
+#: build/admin.js:1
+msgid "A top bar announcing free shipping over $50 this weekend"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft created. Nothing is live until you publish it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Start from a template or let DEV3 AI draft one. It is saved as a draft for you to review."
+msgstr ""
+
+#: build/admin.js:1
+msgid "How to start"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Templates"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Describe with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Filter templates by format"
+msgstr ""
+
+#: build/admin.js:1
+msgid "All formats"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use template"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Describe the campaign"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mention the goal, the offer and who should see it. DEV3 AI picks the format, copy, colours and triggers."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Regenerate with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI draft · not saved yet"
+msgstr ""
+
+#. translators: %d: seconds
+#: build/admin.js:3
+#, js-format
+msgid "after %ds"
+msgstr ""
+
+#. translators: %d: percent
+#: build/admin.js:5
+#, js-format
+msgid "at %d%% scroll"
+msgstr ""
+
+#. translators: %d: seconds
+#: build/admin.js:7
+#, js-format
+msgid "after %ds idle"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Create draft and edit"
+msgstr ""
+
+#. translators: %d: number of variants
+#: build/admin.js:7
+#, js-format
+msgid "A/B · %d variants"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Views (30d)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Leads (30d)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Campaigns"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Popups, slide-ins, floating bars, full-screen mats and inline forms."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Filter by status"
+msgstr ""
+
+#: build/admin.js:7
+msgid "All"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Campaign paused."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Pause"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Campaign is live."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Activate"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Duplicate"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Copy created as a draft."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Delete"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Create your first campaign"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Nothing here"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Pick a template or describe what you want and DEV3 AI drafts it."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Delete campaign?"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Cancel"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Campaign deleted."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Its statistics are deleted too. Leads it collected stay in the Leads list."
+msgstr ""
+
+#. translators: %s: variant name
+#: build/admin.js:7
+#, js-format
+msgid "Editing variant %s. Switch variants above the preview."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Eyebrow"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Headline"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Body"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Button"
+msgstr ""
+
+#: build/admin.js:7
+msgid "\"No thanks\" link"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Success title"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Success message"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Write with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Get fresh copy for this variant. You review every change; nothing is saved or published automatically."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Goal"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Grow the newsletter"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Offer"
+msgstr ""
+
+#: build/admin.js:7
+msgid "10% off the first order"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Audience"
+msgstr ""
+
+#: build/admin.js:7
+msgid "First-time visitors"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Tone"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Friendly"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Professional"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Playful"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Urgent (honest)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Luxury"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Copy applied to the editor. Save to keep it."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Use this copy"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Copy"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Eyebrow (small label above the headline)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Links and bold text are allowed."
+msgstr ""
+
+#: build/admin.js:7
+#: build/block.js:1
+msgid "Button text"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Optional. Keep it polite."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Image"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Loaded only when the campaign opens. Hidden in the mobile bottom sheet."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Choose an image"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Use image"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Replace image"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Choose image"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Remove"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Image URL"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Alt text"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Leave empty for decorative images."
+msgstr ""
+
+#: build/admin.js:7
+msgid "After sign-up"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Text"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Dropdown"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Checkbox"
+msgstr ""
+
+#: build/admin.js:7
+msgid "What the visitor does"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Action"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Fill in a form (collect leads)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Click a button (link)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Nothing (announcement)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Button link"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Open in a new tab"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Form fields"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Up to 6 fields. Ask only for what you need: every field lowers sign-ups."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Move up"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Remove field"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Label"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Placeholder"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Field key"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Column name in the CSV export."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Options (one per line)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Required"
+msgstr ""
+
+#: build/admin.js:7
+msgid "New field"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Add field"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Consent (GDPR)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "The exact label is stored with each lead as proof of consent. Mailchimp and Brevo only receive leads who ticked it."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Show a consent checkbox"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Checkbox label"
+msgstr ""
+
+#: build/admin.js:7
+msgid "You can link your privacy policy with <a href=\"…\">…</a>."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Required to submit"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Offer & success"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Offer shown after sign-up"
+msgstr ""
+
+#: build/admin.js:7
+msgid "No code"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Reveal a fixed code"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Unique one-time WooCommerce coupon"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Unique coupon (needs WooCommerce)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Code"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Only sent to the browser after a successful sign-up."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Discount"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Percent off"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Fixed amount off the cart"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Amount"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Valid for (days)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "0 = no expiry"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Code prefix"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Then"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Show the success message"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Show the message, then go to a page"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Redirect URL"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Format"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Popup (centered)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Slide-in (corner)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Inline form (in the page)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Layout"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Stacked"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Image left"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Image on top"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Minimal (no image)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Add an image in Content to use this layout."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Size"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Small"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Medium"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Large"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Text alignment"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Center"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Left"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Position"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Top"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Bottom"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Bottom right"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Bottom left"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Animation"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Fade"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Slide up"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Zoom"
+msgstr ""
+
+#: build/admin.js:7
+msgid "None"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Turned off automatically for visitors who prefer reduced motion."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Colours & shape"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Fonts come from your theme."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Background"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Accent / button"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Corner radius (px)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Backdrop darkness (%)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Low contrast"
+msgstr ""
+
+#. translators: 1: text contrast, 2: button contrast
+#: build/admin.js:7
+#, js-format
+msgid "Text %1$s:1, button %2$s:1. Aim for at least 4.5:1 so everyone can read it (WCAG AA)."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Use this design for all variants"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Where the form appears"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Placement"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Only where I add the block or shortcode"
+msgstr ""
+
+#: build/admin.js:7
+msgid "After the content of…"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Before the content of…"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Post types"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Embed anywhere"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Block: \"Lead form\". Shortcode:"
+msgstr ""
+
+#: build/admin.js:7
+msgid "When it opens"
+msgstr ""
+
+#: build/admin.js:7
+msgid "The first trigger that fires opens the campaign (once per page view)."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Trigger"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Seconds"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Percent scrolled"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Idle seconds"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Sensitivity (px from top)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "CSS selector (optional)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Remove trigger"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Add trigger"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Exit intent on phones"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Use a fast scroll up"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Do not use on phones"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Phones have no mouse, so \"leaving\" is detected by a quick scroll back up."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Open on click"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Any link to"
+msgstr ""
+
+#: build/admin.js:7
+msgid "any element with the class"
+msgstr ""
+
+#: build/admin.js:7
+msgid "the \"Popup button\" block or"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Schedule & priority"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Start (optional)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "End (optional)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Priority"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Higher wins when several campaigns could open."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Term"
+msgstr ""
+
+#: build/admin.js:7
+msgid "IDs (comma separated)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "URL text or pattern"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Contains the text, or use * as a wildcard on the path."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Shop"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Product"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Cart"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Checkout"
+msgstr ""
+
+#: build/admin.js:7
+msgid "My account"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Suggest targeting with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Triggers, pages, devices and frequency based on your goal and site structure. Phone-friendly by default."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Recover visitors leaving the product pages"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Suggest with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Suggestion applied to the editor. Save to keep it."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Use these settings"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Desktop"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Tablet"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Pages"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Checked on the server, so it works with page caching."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Show on"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Every page"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Only pages matching a rule"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Every page except matches"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Rule"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Remove rule"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Add rule"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Visitors"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Devices"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Login"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Everyone"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Logged-out visitors"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Logged-in users"
+msgstr ""
+
+#: build/admin.js:7
+msgid "New or returning"
+msgstr ""
+
+#: build/admin.js:7
+msgid "New visitors"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Returning visitors"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Minimum pages viewed"
+msgstr ""
+
+#: build/admin.js:7
+msgid "In this visit."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Referrer"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Any source"
+msgstr ""
+
+#: build/admin.js:7
+msgid "From search engines"
+msgstr ""
+
+#: build/admin.js:7
+msgid "From social networks"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Direct / no referrer"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Referrer contains…"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Referrer does not contain…"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Referrer text"
+msgstr ""
+
+#: build/admin.js:7
+msgid "UTM campaign"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Matches the UTM tags the visitor arrived with in this visit."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Parameter"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Match"
+msgstr ""
+
+#: build/admin.js:7
+msgid "equals"
+msgstr ""
+
+#: build/admin.js:7
+msgid "contains"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Value"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Remove UTM rule"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Add UTM rule"
+msgstr ""
+
+#: build/admin.js:7
+msgid "WooCommerce cart"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Target by cart"
+msgstr ""
+
+#. translators: %s: currency
+#: build/admin.js:7
+#, js-format
+msgid "Minimum cart value %s"
+msgstr ""
+
+#. translators: %s: currency
+#: build/admin.js:7
+#, js-format
+msgid "Maximum cart value %s"
+msgstr ""
+
+#: build/admin.js:7
+msgid "0 = no maximum"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Cart must not be empty"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Frequency"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Respectful defaults keep visitors happy."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Show"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Once per visit"
+msgstr ""
+
+#: build/admin.js:7
+msgid "At most once every N days"
+msgstr ""
+
+#: build/admin.js:7
+msgid "At most N times in total"
+msgstr ""
+
+#: build/admin.js:7
+msgid "On every page view"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Days"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Times"
+msgstr ""
+
+#: build/admin.js:7
+msgid "After closing, hide for (days)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "After signing up"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Never show again"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Show again after N days"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Offer variants with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Three different angles or offers to test against your control. Add the ones you like; nothing goes live until you publish."
+msgstr ""
+
+#: build/admin.js:7
+msgid "More newsletter sign-ups"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Offers you can give"
+msgstr ""
+
+#: build/admin.js:7
+msgid "10% off, free shipping, a PDF guide"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Generate variants with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:7
+msgid "A test can have up to 4 variants. Remove one to add more."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Variant added to the test. Save to keep it."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Add to test"
+msgstr ""
+
+#. translators: 1: model, 2: tokens
+#: build/admin.js:7
+#, js-format
+msgid "Not saved yet · %1$s · %2$s tokens"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Variants"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Each visitor always sees the same variant. Views and sign-ups are counted per variant."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Run an A/B test"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Add a second variant to start a test."
+msgstr ""
+
+#. translators: %s: variant
+#: build/admin.js:7
+#, js-format
+msgid "Variant %s was declared the winner and is shown to everyone."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Control name"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Variant name"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Traffic weight"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Preview"
+msgstr ""
+
+#. translators: %s: variant
+#: build/admin.js:7
+#, js-format
+msgid "Remove variant %s"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Add variant (copy of the control)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Open Integrations"
+msgstr ""
+
+#: build/admin.js:7
+msgid "List"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Send leads to Mailchimp"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Tags (comma separated)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Double opt-in (Mailchimp sends a confirmation email)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Send leads to Brevo"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Webhook"
+msgstr ""
+
+#: build/admin.js:7
+msgid "POSTs each lead as JSON (Zapier, Make, n8n, your CRM). Signed with X-DEV3PU-Signature when a secret is set under Integrations."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Send leads to a webhook"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Webhook URL"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Send a test event"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Variant"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Leading"
+msgstr ""
+
+#: build/admin.js:7
+msgid "vs control"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Confidence"
+msgstr ""
+
+#: build/admin.js:7
+msgid "A/B results"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Results"
+msgstr ""
+
+#: build/admin.js:7
+msgid "All time. A result is significant at 95% confidence with at least 100 views per variant."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Winner declared. The test is stopped and everyone sees this variant."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Declare winner"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Explain with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Explain the results"
+msgstr ""
+
+#. translators: %s: variant
+#: build/admin.js:7
+#, js-format
+msgid "Suggested winner: %s"
+msgstr ""
+
+#: build/admin.js:7
+msgid "No clear winner yet"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Next test:"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Leads per day (30 days)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Saved."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Published. The campaign is live."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Paused."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Content"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Form & offer"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Design"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Triggers"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Targeting"
+msgstr ""
+
+#: build/admin.js:7
+msgid "A/B test"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Integrations"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Unsaved changes"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Preview on site"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Update"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Save draft"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Publish"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Campaign name (internal)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Editor sections"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Preview device"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Preview variant"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Preview state"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Form"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Success"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Mobile-safe mode: on phones this shows as a non-blocking bottom sheet unless the visitor opens it with a click."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Stored"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Synced"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Partly synced"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Sync failed"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Yes"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Not asked / not given"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Coupon"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Device"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Sync finished."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Retry sync"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Delete this lead?"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Lead deleted."
+msgstr ""
+
+#: build/admin.js:7
+msgid "It is removed from WordPress only, not from Mailchimp or Brevo."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Everyone who signed up through a campaign. Personal data export and erasure requests include these leads."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Export CSV"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Search"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Email, name or phone"
+msgstr ""
+
+#: build/admin.js:7
+msgid "All campaigns"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Any status"
+msgstr ""
+
+#: build/admin.js:7
+msgid "From"
+msgstr ""
+
+#: build/admin.js:7
+msgid "To"
+msgstr ""
+
+#: build/admin.js:7
+msgid "No leads found"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Leads appear here as soon as visitors sign up."
+msgstr ""
+
+#: build/admin.js:7
+msgid "leads"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Mailchimp → Profile → Extras → API keys. It ends in -us1, -us21…"
+msgstr ""
+
+#: build/admin.js:7
+msgid "API key (v3)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Brevo → SMTP & API → API keys."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Webhook signing"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Signing secret (optional)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "When set, every webhook carries X-DEV3PU-Signature: sha256=HMAC(body, secret)."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Saved (encrypted)."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Removed."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Connect your email marketing tools once, then pick a list in each campaign."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Connected"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Not set"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Test connection"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Save"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Set by a constant in wp-config.php."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Test URL"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Settings saved."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Save settings"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Site-wide rules that apply to every campaign."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Visitor experience"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Mobile-safe mode (recommended)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "On phones, popups and full-screen campaigns appear as a small bottom sheet that does not block the page, and never right on page load. This follows Google’s guidance on intrusive interstitials."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Max overlays per page view"
+msgstr ""
+
+#: build/admin.js:7
+msgid "0 = no limit. Click-opened campaigns are not limited."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Seconds between overlays"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Never show campaigns to these roles"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Respect Do Not Track / Global Privacy Control"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Visitors with DNT or GPC turned on see no automatic popups (inline forms still show)."
+msgstr ""
+
+#: build/admin.js:7
+msgid "DEV3 AI"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Brand voice"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Warm, witty, short sentences. We say “you”, never “customers”."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Used for every copy and variant draft."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Privacy & data"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Count views, closes and conversions"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Anonymous daily counters, no cookies. Needed for A/B tests."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Store a hashed IP with each lead"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Delete leads after (days)"
+msgstr ""
+
+#: build/admin.js:7
+msgid "0 = keep until you delete them."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Minimum seconds before a form can be sent"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Stops bots. A hidden honeypot field and rate limits also apply."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Delete all data when the plugin is uninstalled"
+msgstr ""
+
+#: build/admin.js:7
+msgid "API Config"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Usage Logs"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Connect Google Gemini, pick models and set a monthly AI budget."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Requests, tokens and estimated cost of every DEV3 AI feature."
+msgstr ""
+
+#: build/admin.js:7
+msgid "Made by DEV3 Technologies · AI by Google Gemini, using your own API key."
+msgstr ""
+
+#: build/block.js:1
+msgid "Choose a campaign…"
+msgstr ""
+
+#: build/block.js:1
+msgid "Lead form"
+msgstr ""
+
+#: build/block.js:1
+msgid "An inline lead capture form from DEV3 AI Popups."
+msgstr ""
+
+#: build/block.js:1
+msgid "Edit in DEV3 AI Popups"
+msgstr ""
+
+#: build/block.js:1
+msgid "Create an inline campaign"
+msgstr ""
+
+#: build/block.js:1
+msgid "Pick an inline campaign. Overlay campaigns (popups, bars, slide-ins) show on their own; use the Popup button block to open one on click."
+msgstr ""
+
+#: build/block.js:1
+msgid "Popup button"
+msgstr ""
+
+#: build/block.js:1
+msgid "A button that opens a popup, slide-in or bar when clicked."
+msgstr ""
+
+#: build/block.js:1
+msgid "Choose the campaign this button opens."
+msgstr ""
